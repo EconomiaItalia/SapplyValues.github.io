@@ -1,6 +1,6 @@
 questions =  [
     {"id": 0, "question": "La libertà d'impresa è il miglior modo con cui una società possa prosperare.", "effects": {"right": 1}},
-    {"id": 1, "question": "La carità è un modo migliore di aiutare i bisognosi rispetto all'assistenza sociale.", "effects": {"right": 1}},
+    {"id": 1, "question": "La beneficienza è un modo migliore di aiutare i bisognosi rispetto all'assistenza sociale.", "effects": {"right": 1}},
     {"id": 2, "question": "I salari sono sempre equi, perché i datori di lavoro sanno meglio di chiunque altro quanto vale il lavoro di un lavoratore.", "effects": {"right": 1}},
     {"id": 3, "question": "Il genere umano è avido per natura.", "effects": {"right": 1}},
     {"id": 4, "question": "\"Sfruttamento\" è un termine superato, dato che le lotte del capitalismo del 1800 non esistono più.", "effects": {"right": 1}},
