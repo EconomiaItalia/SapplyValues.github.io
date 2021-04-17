@@ -27,7 +27,7 @@ questions =  [
     {"id": 25, "question": "Il governo dovrebbe, al massimo, fornire servizi di emergenza e forze dell'ordine.", "effects": {"auth": -1}},
     {"id": 26, "question": "Le forze dell’ordine nel mondo sono uno dei mezzi con cui i governi mantengono lo status-quo.", "effects": {"auth": -1}},
     {"id": 27, "question": "Le scuole statali sono un mezzo di propaganda politica.", "effects": {"auth": -1}},
-    {"id": 28, "question": "Due individui consenzienti dovrebbero poter fare sesso come preferiscono, anche nel caso in cui la società ritenesse, o io individualmente ritenga, i loro rapporti incestuosi e privi di dignità morale.", "effects": {"prog": 1}},
+    {"id": 28, "question": "La prostituzione dovrebbe essere legale.", "effects": {"prog": 1}},
     {"id": 29, "question": "Ogni individuo dovrebbe disporre del proprio corpo come meglio ritiene.", "effects": {"prog": 1}},
     {"id": 30, "question": "La religione è l’oppio dei popoli", "effects": {"prog": 1}},
     {"id": 31, "question": "Le pratiche sessuali estreme, come il BDSM (Bondage, disciplina, dominazione, sottomissione, sadismo, masochismo), non sono affare dello stato, ma appartengono alle scelte individuali del singolo", "effects": {"prog": 1}},
@@ -39,7 +39,7 @@ questions =  [
     {"id": 37, "question": "Le persone transgender non dovrebbero poter adottare bambini.", "effects": {"prog": -1}},
     {"id": 38, "question": "Le droghe sono dannose e dovrebbero essere vietate.", "effects": {"prog": -1}},
     {"id": 39, "question": "La pena di morte dovrebbe esistere per certi crimini.", "effects": {"prog": -1}},
-    {"id": 40, "question": "I crimini senza vittime dovrebbero comunque essere puniti.", "effects": {"prog": -1}},
+    {"id": 40, "question": "Il possesso di droghe leggere dovrebbe essere sempre un crimine", "effects": {"prog": -1}},
     {"id": 41, "question": "Non si può essere morali senza religione.", "effects": {"prog": -1}},
     {"id": 42, "question": "I genitori dovrebbero avere il potere assoluto sui propri figli in quanto sono di loro proprietà.", "effects": {"prog": -1}},
     {"id": 43, "question": "La diversità culturale è un male.", "effects": {"prog": -1}}
