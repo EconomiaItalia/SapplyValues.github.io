@@ -32,7 +32,7 @@ questions =  [
     {"id": 30, "question": "La religione è l’oppio dei popoli", "effects": {"prog": 1}},
     {"id": 31, "question": "Le pratiche sessuali estreme, come il BDSM (Bondage, disciplina, dominazione, sottomissione, sadismo, masochismo), non sono affare dello stato, ma appartengono alle scelte individuali del singolo", "effects": {"prog": 1}},
     {"id": 32, "question": "Tutti dovrebbero essere vegani. Mangiare un animale è immorale e dovrebbe essere vietato dallo stato.", "effects": {"prog": 1}},
-    {"id": 33, "question": "Il genere (uomo, donna) è un costrutto sociale che dovrebbe essere abolito, anche dal punto di vista burocratico.", "effects": {"prog": 1}},
+    {"id": 33, "question": "Il genere (uomo, donna) è un costrutto sociale che dovrebbe essere eliminato, anche dal punto di vista burocratico.", "effects": {"prog": 1}},
     {"id": 34, "question": "La morale dell’individuo è più importante della cultura della società.", "effects": {"prog": 1}},
     {"id": 35, "question": "", "effects": {"prog": 1}},
     {"id": 36, "question": "L'omosessualità è contro i miei valori.", "effects": {"prog": -1}},
