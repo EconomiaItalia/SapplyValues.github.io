@@ -42,5 +42,5 @@ questions =  [
     {"id": 40, "question": "I crimini senza vittime dovrebbero comunque essere puniti.", "effects": {"prog": -1}},
     {"id": 41, "question": "Non si può essere morali senza religione.", "effects": {"prog": -1}},
     {"id": 42, "question": "I genitori dovrebbero avere il potere assoluto sui propri figli in quanto sono di loro proprietà.", "effects": {"prog": -1}},
-    {"id": 43, "question": "Il multiculturalismo è un male.", "effects": {"prog": -1}}
+    {"id": 43, "question": "La diversità culturale è un male.", "effects": {"prog": -1}}
 ];
