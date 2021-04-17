@@ -36,7 +36,7 @@ questions =  [
     {"id": 34, "question": "La morale dell’individuo è più importante della cultura della società.", "effects": {"prog": 1}},
     {"id": 35, "question": "", "effects": {"prog": 1}},
     {"id": 36, "question": "L'omosessualità è contro i miei valori.", "effects": {"prog": -1}},
-    {"id": 37, "question": "Le persone transgender non dovrebbero poter adottare bambini.", "effects": {"prog": -1}},
+    {"id": 37, "question": "Solo le persone eterossessuali dovrebbero poter adottare bambini.", "effects": {"prog": -1}},
     {"id": 38, "question": "Le droghe sono dannose e dovrebbero essere vietate.", "effects": {"prog": -1}},
     {"id": 39, "question": "La pena di morte dovrebbe esistere per certi crimini.", "effects": {"prog": -1}},
     {"id": 40, "question": "Il possesso di droghe leggere dovrebbe essere sempre un crimine", "effects": {"prog": -1}},
