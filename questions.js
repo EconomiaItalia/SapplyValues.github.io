@@ -21,7 +21,7 @@ questions =  [
     {"id": 19, "question": "La lentezza della burocrazia è un costo necessario.", "effects": {"auth": 1}},
     {"id": 20, "question": "In tempi di crisi, la sicurezza diventa più importante delle libertà civili.", "effects": {"auth": 1}},
     {"id": 21, "question": "Se non hai nulla da nascondere, non hai nulla da temere. ", "effects": {"auth": 1}},
-    {"id": 22, "question": "Tutte le droghe dovrebbero esssere liberalizzate, anche quelle pesanti", "effects": {"auth": -1}},
+    {"id": 22, "question": "Tutte le droghe dovrebbero essere liberalizzate, anche quelle pesanti", "effects": {"auth": -1}},
     {"id": 23, "question": "Senza democrazia la società non è nulla", "effects": {"auth": -1}},
     {"id": 24, "question": "Più il potere statale è decentralizzato meglio è.", "effects": {"auth": -1}},
     {"id": 25, "question": "Il governo dovrebbe, al massimo, fornire servizi di emergenza e forze dell'ordine.", "effects": {"auth": -1}},
