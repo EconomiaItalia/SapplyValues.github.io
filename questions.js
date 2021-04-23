@@ -37,10 +37,8 @@ questions =  [
     {"id": 35, "question": "", "effects": {"prog": 1}},
     {"id": 36, "question": "L'omosessualità è contro i miei valori.", "effects": {"prog": -1}},
     {"id": 37, "question": "Solo le persone eterossessuali dovrebbero poter adottare bambini.", "effects": {"prog": -1}},
-    {"id": 38, "question": "Le droghe sono dannose e dovrebbero essere vietate.", "effects": {"prog": -1}},
-    {"id": 39, "question": "La pena di morte dovrebbe esistere per certi crimini.", "effects": {"prog": -1}},
-    {"id": 40, "question": "Il possesso di droghe leggere dovrebbe essere sempre un crimine", "effects": {"prog": -1}},
-    {"id": 41, "question": "Non si può essere morali senza religione.", "effects": {"prog": -1}},
-    {"id": 42, "question": "I genitori dovrebbero avere il potere assoluto sui propri figli in quanto sono di loro proprietà.", "effects": {"prog": -1}},
-    {"id": 43, "question": "La diversità culturale è un male.", "effects": {"prog": -1}}
+    {"id": 38, "question": "La pena di morte dovrebbe esistere per certi crimini.", "effects": {"prog": -1}},
+    {"id": 39, "question": "Non si può essere morali senza religione.", "effects": {"prog": -1}},
+    {"id": 40, "question": "I genitori dovrebbero avere il potere assoluto sui propri figli in quanto sono di loro proprietà.", "effects": {"prog": -1}},
+    {"id": 41, "question": "La diversità culturale è un male.", "effects": {"prog": -1}}
 ];
