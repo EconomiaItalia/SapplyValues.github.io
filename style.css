@@ -1,17 +1,16 @@
 html {
-    background-color: #bbbbbb;
+    background-color: #ffffff;
     padding: 0px;
 }
 body {
-    width: 80%;
+    width: 90%;
     min-height: calc(100vh - 4em);
     margin: 0 auto;
     padding: 2em;
-    background-color: #dddddd;
-    border-color: #eeeeee;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
+    padding-top: 0.5em;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    /*text-align: center;*/
 }
 p {
     color: #444444;
@@ -36,26 +35,28 @@ p.question {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     width: 70%;
-    min-width: 500pt;
-    min-height: 144pt;
+    min-width: 450pt;
+    min-height: 127pt;
     background-color: #eeeeee;
     padding: 16pt;
-    border-radius: 16pt;
-    font-size: 36pt;
+    border-radius: 35pt;
+    font-size: 27pt;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
+    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.15));
 }
-h1 {
+.title {
     color: #222222;
     font-family: 'Montserrat', sans-serif;
-    font-size: 72pt;
+    font-size: 30pt;
     text-align: center;
-    line-height: 72pt;
-    margin-top: 0pt;
-    margin-bottom: 0pt;
+    line-height: 30pt;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    font-weight: bold;
 }
 #svgHeader {
 	display: none;
@@ -63,11 +64,18 @@ h1 {
 h2 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
+    font-size: 30pt;
+    line-height: 30pt;
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+
+#question-number {
+    font-size: 24pt;
+    line-height: 24pt;
+    font-weight: normal;
+}
+
 li {
     font-size: 16pt;
     text-indent: 16pt;
@@ -133,30 +141,63 @@ img.center {
     width: 50%;
     min-width: 500pt;
 }
-.button {
+.button, .white_button {
     background-color: #2196f3;
     font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
+    border: 1px solid rgba(0, 0, 0, .25);
+    border-radius: 100pt;
     color: white;
     padding: 8pt;
-    width: 50%;
-    min-width: 500pt;
+    width: 40%;
+    min-width: 430pt;
     text-align: center;
     text-decoration: none;
     display: block;
     font-size: 24pt;
     margin: -2px auto;
     cursor: pointer;
+
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, .25), 1px -1px 0 rgba(0, 0, 0, .25), -1px 1px 0 rgba(0, 0, 0, .25), 1px 1px 0 rgba(0, 0, 0, .25);
+
+    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.15));
+
+    transition: background-color 250ms linear;
 }
+
+
+
+.white_button {
+    color:black;
+    background-color: #ffffff;
+    text-shadow: none;
+
+    -webkit-transition: background-color 250ms linear, color 250ms linear, text-shadow 250ms linear;
+    -ms-transition: background-color 250ms linear, color 250ms linear, text-shadow 250ms linear;
+    transition: background-color 250ms linear, color 250ms linear, text-shadow 250ms linear;
+}
+
+.white_button:hover {
+    color: white;
+    background-color: #941A24;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, .25), 1px -1px 0 rgba(0, 0, 0, .25), -1px 1px 0 rgba(0, 0, 0, .25), 1px 1px 0 rgba(0, 0, 0, .25);
+    -webkit-transition: background-color 250ms linear, color 250ms linear, text-shadow 250ms linear;
+    -ms-transition: background-color 250ms linear, color 250ms linear, text-shadow 250ms linear;
+    transition: background-color 250ms linear, color 250ms linear, text-shadow 250ms linear;
+}
+
+/*.white_button:focus {
+    color: white;
+    background-color: #941A24;
+}*/
+
 .green_button {
     background-color: #4caf50;
 }
 .small_button, .small_button_off {
     background-color: #333;
     font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
+    border: 1px solid rgba(0, 0, 0, .25);
+    border-radius: 100pt;
     color: white;
     padding: 8pt;
     width: 10%;
@@ -167,13 +208,19 @@ img.center {
     font-size: 18pt;
     margin: -2px auto;
     cursor: pointer;
+
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, .25), 1px -1px 0 rgba(0, 0, 0, .25), -1px 1px 0 rgba(0, 0, 0, .25), 1px 1px 0 rgba(0, 0, 0, .25);
+
+    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.15));
 }
 .small_button_off {
-    background-color: #ddd;
-    color: #888;
-    border: 2px solid #888;
+    background-color: #ffffff;
+    color: #888888;
     cursor: not-allowed;
-    margin: -4px auto;
+    /*margin: -4px auto;*/
+
+    text-shadow: none;
+
 }
 .button:disabled {
     background-color: #ddd;
@@ -182,7 +229,7 @@ img.center {
     border-radius: 8pt;
     color: #888;
     padding: 8pt;
-    width: 50%;
+    width: 40%;
     min-width: 500pt;
     text-align: center;
     text-decoration: none;
@@ -191,6 +238,42 @@ img.center {
     margin: -2px auto;
     cursor: not-allowed;
 }
+
+.c_agree_btn {
+    background-color: #1b5e20;
+}
+.c_agree_btn:hover {
+    background-color: #144618;
+}
+
+.agree_btn {
+    background-color: #4caf50;
+}
+.agree_btn:hover {
+    background-color: #39833C;
+}
+
+.neutral_btn {
+    background-color: #bbbbbb;
+}
+.neutral_btn:hover {
+    background-color: #8C8C8C;
+}
+
+.disagree_btn {
+    background-color: #f44336;
+}
+.disagree_btn:hover {
+    background-color: #AA281F;
+}
+
+.c_disagree_btn {
+    background-color: #b71c1c;
+}
+.c_disagree_btn:hover {
+    background-color: #891515;
+}
+
 div.text-wrapper {
     font-family: 'Montserrat', sans-serif;
     font-size: 36pt;
@@ -207,9 +290,7 @@ span.weight-300 {
     border-width: 2px;
     border-radius: 8pt;
     display: block;
-    margin: 8pt;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20pt auto 20pt auto;
     max-width: 50%;
 	min-width: 500pt;
 }
@@ -236,6 +317,7 @@ span.weight-300 {
 		margin-bottom: 0pt;
 		font-weight: bold;
         text-anchor: middle;
+        font-size: 6px;
 	}
 	
 	#banner {
@@ -244,10 +326,10 @@ span.weight-300 {
 		border-width: 1px;
 	}
 	
-	.button, .button:disabled, .text_input, .num_input, .selection {
+	.button, .button:disabled, .text_input, .num_input, .selection, .white_button {
 		min-width: 0px;
 		max-width: 100%;
-		width: 100%;
+		width: 90%;
 		font-size: 1.5em;
 	}
 	
@@ -256,11 +338,25 @@ span.weight-300 {
 		line-height: initial
 	}
 
+    #question-number {
+        font-size: 1.3em;
+        line-height: initial;
+        margin-bottom: -6pt;
+    }
+
     p.question {
-        min-height: 224px !important;
+        min-height: 150px !important;
         min-width: 0px;
 		max-width: 100%;
 		width: auto;
 		font-size: 1.75em;
     }
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    max-width: 200px;
 }
