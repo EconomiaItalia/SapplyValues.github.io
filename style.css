@@ -360,3 +360,10 @@ span.weight-300 {
     width: 40%;
     max-width: 200px;
 }
+
+p.powered {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    color: rgba(0, 0, 0, .5);
+    text-align: right;
+}
