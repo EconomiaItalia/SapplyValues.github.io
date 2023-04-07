@@ -1,20 +1,20 @@
 questions = [
-{"id": 0, "question": “Al giorno d'oggi l'apporto dei sindacati porta più danni che benefici, sarebbe molto meglio se venissero aboliti e vietati.", "effects": {"right": 1}},
+{"id": 0, "question": "Al giorno d'oggi l'apporto dei sindacati porta più danni che benefici, sarebbe molto meglio se venissero aboliti e vietati.", "effects": {"right": 1}},
 {"id": 1, "question": "Meglio tassare il reddito in senso proporzionale (es. FLAT TAX) piuttosto che in senso progressivo (es. IRPEF).", "effects": {"right": 1}},
 {"id": 2, "question": "Il comunismo è un ideale che non ha funzionato per l'assenza dei BigData, oggi potrebbe funzionare.", "effects": {"right": -1}},
-{"id": 3, "question": “La finanza speculativa fa bene all’economia.”, "effects": {"right": 1}},
+{"id": 3, "question": "La finanza speculativa fa bene all’economia.", "effects": {"right": 1}},
 {"id": 4, "question": "Non esiste una relazione di causa-effetto fra diritti e crescita economica. Non è vero che al crescere della ricchezza, crescono i diritti.", "effects": {"right": -1}},
 {"id": 5, "question": "Bisognerebbe investire di più nell'ambiente anche a discapito dell'economia.", "effects": {"right": -1}},
 {"id": 6, "question": "In Italia per realizzare il nucleare lo stato deve ignorare l'effetto NIMBY, anche ricorrendo all'uso dell'esercito.", "effects": {"auth": 1}},
-{"id": 7, "question": “Putin, Xi Jinping, Pinochet, Kim Jong-un e tutti gli altri dittatori nel mondo, hanno dimostrato che la democrazia sia fallimentare .”, "effects": {"auth": 1}},
+{"id": 7, "question": "Putin, Xi Jinping, Pinochet, Kim Jong-un e tutti gli altri dittatori nel mondo, hanno dimostrato che la democrazia sia fallimentare .", "effects": {"auth": 1}},
 {"id": 8, "question": "Le intelligenze artificiali, che usano i dati personali in chiaro, non sono un problema.", "effects": {"auth": -1}},
 {"id": 9, "question": "Per coerenza, chi è contro le sostanze stupefacenti dovrebbe essere anche contro le bevande alcoliche come birra e vino.", "effects": {"auth": -1}},
-{"id": 10, "question": “L’obbligo della cintura di sicurezza andrebbe abolito.”, "effects": {"auth": -1}},
-{"id": 11, "question": “Per questioni legate alla sanità, lo stato può e deve prevaricare i diritti individuali.”, "effects": {"auth": 1}},
+{"id": 10, "question": "L’obbligo della cintura di sicurezza andrebbe abolito.", "effects": {"auth": -1}},
+{"id": 11, "question": "Per questioni legate alla sanità, lo stato può e deve prevaricare i diritti individuali.", "effects": {"auth": 1}},
 {"id": 12, "question": "Non esiste differenza fra prostituzione e creazione di contenuti hard sul web.", "effects": {"prog": -1}},
 {"id": 13, "question": "Fra eutanasia e aborto non vi è alcuna differenza.", "effects": {"prog": -1}},
-{"id": 14, "question": “Feticismi e malattie psichiatriche sono aberrazioni nate dal distaccamento della società dai precetti religiosi.”, "effects": {"prog": -1}},
+{"id": 14, "question": "Feticismi e malattie psichiatriche sono aberrazioni nate dal distaccamento della società dai precetti religiosi.", "effects": {"prog": -1}},
 {"id": 15, "question": "La nostra dieta dovrebbe essere decisa dallo stato e prevedere solo cibi vegani o sintetici.", "effects": {"prog": 1}},
-{"id": 16, "question": “Le discriminazioni contro la comunità LGBTQIA+ si combattono solo ed esclusivamente con la cultura e non con le leggi”, "effects": {"prog": 1}},
-{"id": 17, "question": “Non tutti i criminali possono essere riabilitati, perciò è necessario reintrodurre la pena di morte.”, "effects": {"prog": -1}}
+{"id": 16, "question": "Le discriminazioni contro la comunità LGBTQIA+ si combattono solo ed esclusivamente con la cultura e non con le leggi", "effects": {"prog": 1}},
+{"id": 17, "question": "Non tutti i criminali possono essere riabilitati, perciò è necessario reintrodurre la pena di morte.", "effects": {"prog": -1}}
 ];
