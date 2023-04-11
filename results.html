@@ -28,6 +28,7 @@
  <p style="text-align:center;margin:-2px auto">Seguici su <a href="https://www.youtube.com/@Dr.Elegantia">EconomiaItalia</a></p></br>
 <p style="text-align:center;margin:-2px auto">Qui i risultati della <a href="https://raw.githubusercontent.com/EconomiaItalia/libbberale/master/prima_stagione.png">prima stagione</a></p></br>
     <button class="white_button" onclick="location.href='index.html';">Indietro</button> <br>
+<a href="https://twitter.com/intent/tweet?url=<URL>&text=<TESTO>" target="_blank" rel="noopener noreferrer"><button class="white_button">Condividi su Twitter</button></a>
 	
     <script type="application/javascript" src="results.js"></script>
     <script>
@@ -87,9 +88,7 @@
                 ctx.textAlign="center"
                 ctx.fillStyle="#222222"
                 ctx.fillText("Economicismo (x): " + x_axis + " ◊ Autoritarismo (y): " + y_axis + " ◊ Progressismo (z): " + z_axis, 925, 1375)
-                ctx.fillText("Autoritarismo (y): " + y_axis, 725, 1425)
-                ctx.fillText("Progressismo (z): " + z_axis, 725, 1475)
-		ctx.fillText("Il tuo liBBBerale è lungo: " + (parseFloat(z_axis) + parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2) + " LiBBB", 725, 1525)
+		ctx.fillText("Il tuo liBBBerale è lungo: " + (parseFloat(z_axis) - parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2) + " LiBBB", 925, 1525)
                 ctx.textAlign="right"
                 ctx.font="60px Montserrat"
                 //ctx.fillText("sistema404.com", 1820, 1600)
