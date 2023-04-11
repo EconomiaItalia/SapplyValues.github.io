@@ -6,9 +6,9 @@
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+</head>
     
-    <body>
+<body>
     <a href="https://www.umbertobertonelli.it/" id="logo">
         <img src="img/DRELEGANTIA_LOGO.webp" style="width: 100%;">
     </a>
@@ -25,102 +25,61 @@
     
     <img src="" id="banner"></canvas></br>
     <p style="text-align:center;margin:-2px auto">Suggerimento: puoi scaricare direttamente questa immagine. Non è necessario fare uno screenshot!</p></br>
- <p style="text-align:center;margin:-2px auto">Seguici su <a href="https://www.youtube.com/@Dr.Elegantia">EconomiaItalia</a></p></br>
-<p style="text-align:center;margin:-2px auto">Qui i risultati della <a href="https://raw.githubusercontent.com/EconomiaItalia/libbberale/master/prima_stagione.png">prima stagione</a></p></br>
+    <p style="text-align:center;margin:-2px auto">Seguici su <a href="https://www.youtube.com/@Dr.Elegantia">EconomiaItalia</a></p></br>
+    <p style="text-align:center;margin:-2px auto">Qui i risultati della <a href="https://raw.githubusercontent.com/EconomiaItalia/libbberale/master/prima_stagione.png">prima stagione</a></p></br>
     <button class="white_button" onclick="location.href='index.html';">Indietro</button> <br>
-<a target="_blank" class="util share-tw" href="https://twitter.com/intent/tweet?text=Il%20mio%20risultato%20al%20test%20libbberale%20è%20{{risultato}}%20LiBBB!%20&amp;url=https%3A%2F%2Fwww.example.com%2Frisultato%2Fxyz&amp;hashtags=libbberale">Condividi su Twitter</a>
-var risultato = (z_axis - y_axis + x_axis).toFixed(2);
-var linkTwitter = document.querySelector('.util.share-tw');
-linkTwitter.href = "https://twitter.com/intent/tweet?text=Il%20mio%20risultato%20al%20test%20libbberale%20è%20" + risultato + "%20LiBBB!%20&amp;url=https%3A%2F%2Fwww.example.com%2Frisultato%2Fxyz&amp;hashtags=libbberale"
+    <a target="_blank" class="util share-tw" href="https://twitter.com/intent/tweet?text=Il%20mio%20risultato%20al%20test%20libbberale%20è%20{{risultato}}%20LiBBB!%20&amp;url=https%3A%2F%2Fwww.example.com%2Frisultato%2Fxyz&amp;hashtags=libbberale">Condividi su Twitter</a>
 
-<script type="application/javascript" src="results.js"></script>
+    <script type="application/javascript" src="results.js"></script>
     <script>
-
         const urlParams = new URLSearchParams(window.location.search);
-        x_axis  = parseFloat(urlParams.get("right"))
-        y_axis  = parseFloat(urlParams.get("auth"))
-        z_axis  = parseFloat(urlParams.get("prog"))
+        var x_axis = parseFloat(urlParams.get("right"));
+        var y_axis = parseFloat(urlParams.get("auth"));
+        var z_axis = parseFloat(urlParams.get("prog"));
 	
-	results.push({"nome": "background", "image":"./compass_drelegantia.png", "x_axis": 0, "y_axis": 0});
+        results.push({"nome": "background", "image":"./compass_drelegantia.png", "x_axis": 0, "y_axis": 0});
 	    
-	function loadImages(callback) {
-		var loadedImages = 0;
-		var numImages = 0;
-		// get num of sources
-		for(var res in results) {
-		  numImages++;
-		}
-		for(var res in results) {
-		  results[res]["imageObj"] = new Image();
-		  results[res]["imageObj"].onload = function() {
-		    if(++loadedImages >= numImages) {
-		      callback();
-		    }
-		  };
-		 results[res]["imageObj"].src = results[res]["image"];
-		}
-	}
-	
-	var c = document.createElement("canvas");
-        c.width = 1850;
-        c.height = 1660;
-                
-        var ctx = c.getContext("2d");
-	    
-	loadImages(function() {
-		var c = document.createElement("canvas");
-            	c.width = 1850;
-            	c.height = 1600;
-                
-                var ctx = c.getContext("2d");
-                ctx.fillStyle = "#EEEEEE"
-                ctx.fillRect(0, 0, 1850, 1600);
-		
-		background = results.pop();
-                ctx.drawImage(background["imageObj"], 0, 0);
-    
-                var line = c.getContext("2d");
-                line.beginPath();
-                line.moveTo(1500, 1145 - (1000 * (z_axis + 10)/20));
-                line.lineTo(1650, 1145 - (1000 * (z_axis + 10)/20));
-                line.lineWidth = 10;
-                line.strokeStyle = "red";
-                line.stroke();
-		    
-                ctx.font="50px Montserrat"
-                ctx.textAlign="center"
-                ctx.fillStyle="#222222"
-                ctx.fillText("Economicismo (x): " + x_axis + " ◊ Autoritarismo (y): " + y_axis + " ◊ Progressismo (z): " + z_axis, 925, 1375)
-		ctx.fillText("Il tuo liBBBerale è lungo: " + (parseFloat(z_axis) - parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2) + " LiBBB", 925, 1525)
-                ctx.textAlign="right"
-                ctx.font="60px Montserrat"
-                //ctx.fillText("sistema404.com", 1820, 1600)
-		
-		var pos_x;
-		var pos_y;
-		for(var res in results){
-		    pos_x = 200 + (1000 * (parseFloat(results[res]["x_axis"]) + 10)/20);
-		    pos_y = 1150 - (1000 * (parseFloat(results[res]["y_axis"]) + 10)/20);	
-		    ctx.drawImage(results[res]["imageObj"], pos_x - 50, pos_y - 50, 50, 50);
-		}
-		
-		var dot = c.getContext("2d");
-                dot.beginPath();
-                dot.arc(200 + (1000 * (x_axis + 10)/20), 1150 - (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
-                dot.fillStyle = 'orange';
-                dot.fill();
-		dot.strokeStyle = "black";
-		dot.lineWidth = 6;
-                dot.stroke();
-		   		    
-		//FINE    
-		document.getElementById("banner").src = c.toDataURL();
-        });
-    
-        </script>
+        function loadImages(callback) {
+            var loadedImages = 0;
+            var numImages = 0;
+            // get num of sources
+            for(var res in results) {
+                numImages++;
+            }
+            for(var res in results) {
+                results[res]["imageObj"] = new Image();
+                results[res]["imageObj"].onload = function() {
+if(++loadedImages >= numImages) {
+callback();
+}
+};
+results[res]["imageObj"].src = results[res]["image"];
+}
+}
 
-   
-	
+    function drawImage(imageObj, x, y) {
+        var canvas = document.getElementById("banner");
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(imageObj, x, y);
+    }
 
-	<p class="powered">Powered by <a href="https://www.linkedin.com/in/gabriele-di-lieto-710ba1216">Gabriele Di Lieto</a> e <a href="https://www.linkedin.com/in/alex-guerra-934a75197">Alex Guerra</a></p>
-    </body>
+    function drawImages() {
+        for(var res in results) {
+            drawImage(results[res]["imageObj"], results[res]["x_axis"] + x_axis, results[res]["y_axis"] + y_axis);
+        }
+    }
+
+    function calculateResult() {
+        var result = z_axis + Math.floor((x_axis + y_axis) / 2);
+        return result;
+    }
+
+    loadImages(function() {
+        drawImages();
+        var result = calculateResult();
+        document.querySelector(".svgHeader").innerHTML = "Risultato: " + result;
+        var shareLink = document.querySelector(".share-tw");
+        shareLink.href = shareLink.href.replace("{{risultato}}", result);
+    });
+</script>
+</body>
