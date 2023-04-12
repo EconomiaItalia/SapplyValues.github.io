@@ -1,141 +1,37 @@
+<!DOCTYPE html> <html lang="it"> <head> <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet"> <link href='style.css' rel='stylesheet' type='text/css'> <title>Quant'è lungo il tuo libbberale?</title> <link rel="icon" type="image/x-icon" href="icon.png"> <link rel="shortcut icon" type="image/x-icon" href="icon.png"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> </head> <body> <a href="https://www.umbertobertonelli.it/" id="logo"> <img src="img/DRELEGANTIA_LOGO.webp" style="width: 100%;"> </a> <h1 class="title">Quant'è lungo il tuo libbberale?</h1> <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 14"> <text x="50%" y="10" class="svgHeader">Quant'è lungo il tuo libbberale?</text> </svg> <hr> <h1 class="title">Risultato</h1> <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 11"> <text x="50%" y="8" class="svgHeader">Risultato</text> </svg>
+<img src="" id="banner"><br>
 
+<p style="text-align:center;margin:-2px auto">Suggerimento: puoi scaricare direttamente questa immagine. Non è necessario fare uno screenshot!</p><br> <p style="text-align:center;margin:-2px auto">Seguici su <a href="https://www.youtube.com/@Dr.Elegantia">EconomiaItalia</a></p><br> <p style="text-align:center;margin:-2px auto">Qui i risultati della <a href="https://raw.githubusercontent.com/EconomiaItalia/libbberale/master/prima_stagione.png">prima stagione</a></p><br> <button class="white_button" onclick="location.href='index.html';">Indietro</button> <br> <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Feconomiaitalia.github.io%2Flibbberale%2Fresults.html%3Fright%3D${x_axis}%26auth%3D${y_axis}%26prog%3D${z_axis}&text=Ho%20appena%20calcolato%20la%20lunghezza%20del%20mio%20libbberale%20e%20il%20risultato%20è%20di%20${(parseFloat(z_axis) - parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2)}%20LiBBB!%20Vuoi%20provare%20anche%20tu%3F" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> <script type="application/javascript" src="results.js"></script> <script> const urlParams = new URLSearchParams(window.location.search); x_axis = parseFloat(urlParams.get("right")) y_axis = parseFloat(urlParams.get("auth")) z_axis = parseFloat(urlParams.get("prog"))
+results.push({"nome": "background", "image":"./compass_drelegantia.png", "x_axis": 0, "y_axis": 0});
 
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-    <link href='style.css' rel='stylesheet' type='text/css'>
-    <title>Quant'è lungo il tuo libbberale?</title>
-    <link rel="icon" type="x-icon" href="icon.png">
-    <link rel="shortcut icon" type="x-icon" href="icon.png">
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    
-    <body>
-    <a href="https://www.umbertobertonelli.it/" id="logo">
-        <img src="img/DRELEGANTIA_LOGO.webp" style="width: 100%;">
-    </a>
-    <h1 class="title">Quant'è lungo il tuo libbberale?</h1>
-    <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 14">
-        <text x="50%" y="10" class="svgHeader">Quant'è lungo il tuo libbberale?</text>
-    </svg>
-    <hr>
-    
-	<h1 class="title">Risultato</h1>
-    <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 11">
-		<text x="50%" y="8" class="svgHeader">Risultato</text>
-	</svg>
-    
-    <img src="" id="banner"></canvas></br>
-    <p style="text-align:center;margin:-2px auto">Suggerimento: puoi scaricare direttamente questa immagine. Non è necessario fare uno screenshot!</p></br>
- <p style="text-align:center;margin:-2px auto">Seguici su <a href="https://www.youtube.com/@Dr.Elegantia">EconomiaItalia</a></p></br>
-<p style="text-align:center;margin:-2px auto">Qui i risultati della <a href="https://raw.githubusercontent.com/EconomiaItalia/libbberale/master/prima_stagione.png">prima stagione</a></p></br>
-    <button class="white_button" onclick="location.href='index.html';">Indietro</button> <br>
-<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Feconomiaitalia.github.io%2Flibbberale%2Fresults.html%3Fright%3D${x_axis}%26auth%3D${y_axis}%26prog%3D${z_axis}&text=Ho%20appena%20calcolato%20la%20lunghezza%20del%20mio%20libbberale%20e%20il%20risultato%20è%20di%20${(parseFloat(z_axis) - parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2)}%20LiBBB!%20Vuoi%20provare%20anche%20tu%3F" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+function loadImages(callback) {
+var loadedImages = 0;
+var numImages = 0;
+// get num of sources
+for(var res in results) {
+numImages++;
+}
+for(var res in results) {
+results[res]["imageObj"] = new Image();
+results[res]["imageObj"].onload = function() {
+if(++loadedImages >= numImages) {
+callback();
+}
+};
+results[res]["imageObj"].src = results[res]["image"];
+}
+}
 
-<script type="application/javascript" src="results.js"></script>
-    <script>
+var c = document.createElement("canvas");
+c.width = 1850;
+c.height = 1660;
 
-        const urlParams = new URLSearchParams(window.location.search);
-        x_axis  = parseFloat(urlParams.get("right"))
-        y_axis  = parseFloat(urlParams.get("auth"))
-        z_axis  = parseFloat(urlParams.get("prog"))
-	
-	results.push({"nome": "background", "image":"./compass_drelegantia.png", "x_axis": 0, "y_axis": 0});
-	    
-	function loadImages(callback) {
-		var loadedImages = 0;
-		var numImages = 0;
-		// get num of sources
-		for(var res in results) {
-		  numImages++;
-		}
-		for(var res in results) {
-		  results[res]["imageObj"] = new Image();
-		  results[res]["imageObj"].onload = function() {
-		    if(++loadedImages >= numImages) {
-		      callback();
-		    }
-		  };
-		 results[res]["imageObj"].src = results[res]["image"];
-		}
-	}
-	
-	var c = document.createElement("canvas");
-        c.width = 1850;
-        c.height = 1660;
-                
-        var ctx = c.getContext("2d");
-	    
-	loadImages(function() {
-		var c = document.createElement("canvas");
-            	c.width = 1850;
-            	c.height = 1600;
-                
-                var ctx = c.getContext("2d");
-                ctx.fillStyle = "#EEEEEE"
-                ctx.fillRect(0, 0, 1850, 1600);
-		
-		background = results.pop();
-                ctx.drawImage(background["imageObj"], 0, 0);
-    
-                var line = c.getContext("2d");
-                line.beginPath();
-                line.moveTo(1500, 1145 - (1000 * (z_axis + 10)/20));
-                line.lineTo(1650, 1145 - (1000 * (z_axis + 10)/20));
-                line.lineWidth = 10;
-                line.strokeStyle = "red";
-                line.stroke();
-		    
-                ctx.font="50px Montserrat"
-                ctx.textAlign="center"
-                ctx.fillStyle="#222222"
-                ctx.fillText("Economicismo (x): " + x_axis + " ◊ Autoritarismo (y): " + y_axis + " ◊ Progressismo (z): " + z_axis, 925, 1375)
-		ctx.fillText("Il tuo liBBBerale è lungo: " + (parseFloat(z_axis) - parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2) + " LiBBB", 925, 1525)
-                ctx.textAlign="right"
-                ctx.font="60px Montserrat"
-                //ctx.fillText("sistema404.com", 1820, 1600)
-		
-		var pos_x;
-		var pos_y;
-		for(var res in results){
-		    pos_x = 200 + (1000 * (parseFloat(results[res]["x_axis"]) + 10)/20);
-		    pos_y = 1150 - (1000 * (parseFloat(results[res]["y_axis"]) + 10)/20);	
-		    ctx.drawImage(results[res]["imageObj"], pos_x - 50, pos_y - 50, 50, 50);
-		}
-		
-		var dot = c.getContext("2d");
-                dot.beginPath();
-                dot.arc(200 + (1000 * (x_axis + 10)/20), 1150 - (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
-                dot.fillStyle = 'orange';
-                dot.fill();
-		dot.strokeStyle = "black";
-		dot.lineWidth = 6;
-                dot.stroke();
-		   		    
-		//FINE    
-		document.getElementById("banner").src = c.toDataURL();
-        });
-    
-        </script>
+var ctx = c.getContext("2d");
+loadImages(function() {
+for(var res in results) {
+ctx.drawImage(results[res]["imageObj"], results[res]["x_axis"], results[res]["y_axis"]);
+}
+document.getElementById("banner").src = c.toDataURL();
+});
 
-<button class="white_button" onclick="shareOnTwitter()">Condividi su Twitter</button>
-
-<script>
-function shareOnTwitter() {
-  const x_axis = parseFloat(document.querySelector('#right_text').textContent);
-  const y_axis = parseFloat(document.querySelector('#auth_text').textContent);
-  const z_axis = parseFloat(document.querySelector('#prog_text').textContent);
-
-  const libbberaleValue = z_axis - y_axis + x_axis;
-  const libbberaleText = `Ho appena calcolato la lunghezza del mio libbberale e il risultato è di ${libbberaleValue.toFixed(2)} LiBBB! Vuoi provare anche tu? Via @drelegantia`;
-
-  const imageUrl = `https://economiaitalia.github.io/libbberale/results.html?right=${x_axis}&auth=${y_axis}&prog=${z_axis}`;
-  const tweetUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(imageUrl)}&text=${encodeURIComponent(libbberaleText)}&image=${encodeURIComponent(imageUrl)}`;
-
-  window.open(tweetUrl, '_blank');
-}}
-   </script>
-	
-
-	<p class="powered">Powered by <a href="https://www.linkedin.com/in/gabriele-di-lieto-710ba1216">Gabriele Di Lieto</a> e <a href="https://www.linkedin.com/in/alex-guerra-934a75197">Alex Guerra</a></p>
-    </body>
+</script> </body> </html>
