@@ -105,6 +105,9 @@ loadImages(function() {
 
 
 <script> function shareOnTwitter() 
-	const url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://economiaitalia.github.io/libbberale/results.html?right=${x_axis}&auth=${y_axis}&prog=${z_axis}`)}&text=${encodeURIComponent(`Ho appena calcolato la lunghezza del mio libbberale e il risultato è di ${(parseFloat(z_axis) - parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2)} LiBBB! Vuoi provare anche tu? Via @drelegantia `)}&amp;hashtags=libbberale&image=${encodeURIComponent('libbberale/blob/master/compass_home.png')}` </script>
+	function shareOnTwitter() {
+	const url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://economiaitalia.github.io/libbberale/results.html?right=${x_axis}&auth=${y_axis}&prog=${z_axis}`)}&text=${encodeURIComponent(`Ho appena calcolato la lunghezza del mio libbberale e il risultato è di ${(parseFloat(z_axis) - parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2)} LiBBB! Vuoi provare anche tu? Via @drelegantia `)}&amp;hashtags=libbberale&image=${encodeURIComponent('https://economiaitalia.github.io/libbberale/compass_home.png')}`;
+	window.open(url);
+} </script>
 <p class="powered">Powered by <a href="https://www.linkedin.com/in/gabriele-di-lieto-710ba1216">Gabriele Di Lieto</a> e <a href="https://www.linkedin.com/in/alex-guerra-934a75197">Alex Guerra</a></p>
 </body>
