@@ -1,4 +1,4 @@
-<head> <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet"> <link href='style.css' rel='stylesheet' type='text/css'> <title>Quant'è lungo il tuo libbberale?</title> <link rel="icon" type="x-icon" href="icon.png"> <link rel="shortcut icon" type="x-icon" href="icon.png"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta property="twitter:image" content="compass_home.png"> <!-- Aggiunta della meta tag per l'immagine del tweet --></head>
+<head> <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet"> <link href='style.css' rel='stylesheet' type='text/css'> <title>Quant'è lungo il tuo libbberale?</title> <link rel="icon" type="x-icon" href="icon.png"> <link rel="shortcut icon" type="x-icon" href="icon.png"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta property="twitter:image" content="https://economiaitalia.github.io/libbberale/compass_home.png"> <!-- Aggiunta della meta tag per l'immagine del tweet --></head>
 <body>
 <a href="https://www.umbertobertonelli.it/" id="logo">
     <img src="img/DRELEGANTIA_LOGO.webp" style="width: 100%;">
@@ -102,8 +102,9 @@ loadImages(function() {
 
     </script>
 <button class="white_button" onclick="shareOnTwitter()">Condividi su Twitter</button>
-<meta property="twitter:image" content="compass_home.png">
 
-<script> function shareOnTwitter() { const url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://economiaitalia.github.io/libbberale/results.html?right=${x_axis}&auth=${y_axis}&prog=${z_axis}`)}&text=${encodeURIComponent(`Ho appena calcolato la lunghezza del mio libbberale e il risultato è di ${(parseFloat(z_axis) - parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2)} LiBBB! Vuoi provare anche tu? Via @drelegantia `)}`; window.open(url, '_blank'); } </script>
+
+<script> function shareOnTwitter() 
+	const url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://economiaitalia.github.io/libbberale/results.html?right=${x_axis}&auth=${y_axis}&prog=${z_axis}`)}&text=${encodeURIComponent(`Ho appena calcolato la lunghezza del mio libbberale e il risultato è di ${(parseFloat(z_axis) - parseFloat(y_axis) + parseFloat(x_axis)).toFixed(2)} LiBBB! Vuoi provare anche tu? Via @drelegantia `)}&amp;hashtags=libbberale&image=${encodeURIComponent('libbberale/blob/master/compass_home.png')}` </script>
 <p class="powered">Powered by <a href="https://www.linkedin.com/in/gabriele-di-lieto-710ba1216">Gabriele Di Lieto</a> e <a href="https://www.linkedin.com/in/alex-guerra-934a75197">Alex Guerra</a></p>
 </body>
