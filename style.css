@@ -1,5 +1,5 @@
 html {
-    background-color: #1a202c;
+    background-color: #ffffff;
     padding: 0px;
 }
 body {
@@ -9,21 +9,21 @@ body {
     padding: 2em;
     padding-top: 0.5em;
     padding-bottom: 0;
-    background-color: #1a202c;
+    background-color: #ffffff;
     /*text-align: center;*/
 }
 p {
-    color: #eeeeee;
+    color: #444444;
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
     line-height: 1;
     margin: 4pt;
 }
 a{
-    color: #eeeeee;
+    color: #2222DD;
 }
 a:hover{
-    color: #eeeeee;
+    color: #22DDDD;
 }
 p.value-description {
     text-indent: -16pt;
@@ -31,7 +31,7 @@ p.value-description {
 }
 p.question {
     margin: 16pt auto;
-    color: #eeeeee;
+    color: #333333;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     width: 70%;
@@ -49,7 +49,7 @@ p.question {
     filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.15));
 }
 .title {
-    color: #eeeeee;
+    color: #222222;
     font-family: 'Montserrat', sans-serif;
     font-size: 30pt;
     text-align: center;
@@ -62,7 +62,7 @@ p.question {
 	display: none;
 }
 h2 {
-    color: #eeeeee;
+    color: #333333;
     font-family: 'Montserrat', sans-serif;
     font-size: 30pt;
     line-height: 30pt;
